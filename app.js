@@ -1,10 +1,10 @@
-import http from 'http';
+import https from 'https';
 import net from 'net';
 import httpProxy from 'http-proxy';
 
 const proxy = httpProxy.createProxyServer({});
 
-const server = http.createServer((req, res) => {
+const server = https.createServer((req, res) => {
 
 	if (req.url === '/test') {
 		res.writeHead(200, { 'Content-Type': 'text/plain' });
