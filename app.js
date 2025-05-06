@@ -39,6 +39,6 @@ server.on('connect', (req, clientSocket, head) => {
  });
  
  // Start the server
- server.listen(8080, () => {
-	console.log('Proxy server is running on port 8080');
+ server.listen(80, () => {
+	console.log('Proxy server is running on port 80');
  });
